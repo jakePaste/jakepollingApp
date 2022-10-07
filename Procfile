@@ -1,1 +1,1 @@
-gunicorn pollingApp.wsgi --log-file
+gunicorn pollApp.wsgi --log-file
