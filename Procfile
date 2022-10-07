@@ -1,1 +1,1 @@
-web: gunicorn pollApp.wsgi --log-file -
+gunicorn pollApp.wsgi:application --log-file - --log-level debug
