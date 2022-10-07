@@ -14,11 +14,11 @@ pipenv install django
 django-admin startproject pollApp
 cd pollApp
 
-# Run server on http: 127.0.0.1:8000 (ctrl+c to stop)
-python3 manage.py runserver
+# Run server on http: 127.0.0.1:8000 (ctrl+break to stop)
+python manage.py runserver
 
 # Run initial migrations
-python3 manage.py migrate
+python manage.py migrate
 
 # Create polls app
 python manage.py startapp polls
