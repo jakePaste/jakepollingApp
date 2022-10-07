@@ -1,1 +1,1 @@
-web: gunicorn --chdir pollApp manage.py:app
+web: gunicorn --chdir pollApp manage:app
