@@ -1,3 +1,3 @@
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+web: gunicorn pollingApp.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
